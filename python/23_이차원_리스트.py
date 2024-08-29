@@ -75,22 +75,46 @@ matrix = [
     [9, 0, 1, 2]
 ]
 
-# 이중 for문을 이용해서 순회 가능
-for i in range(3):  # 3행
-    for j in range(4):  # 4행
-        print(matrix[i][j], end=" ")
-
-    print()
-
 """
 행순회
 1 2 3 4 
 5 6 7 8 
 9 0 1 2
+"""
+# 이중 for문을 이용해서 행 순회 가능
+for i in range(3):  # 3행
+    for j in range(4):  # 4열
+        print(matrix[i][j], end=" ")
 
+    print()
+
+
+"""
 열순회
 1 5 9
 2 6 0
 3 7 1
 4 8 2
 """
+# 이중 for문을 이용해서 열 순회 가능
+matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 0, 1, 2]
+]
+
+for i in range(4):  # 4열
+    for j in range(3):  # 3행
+        print(matrix[j][i], end=" ")
+
+    print()
+
+# 2-4. 이차원 리스트의 원소 반복
+matrix = [
+    [1, 2, 3],
+    [5, 6, 7],
+    [9, 0, 1]
+]
+
+for x, y, z in matrix:
+    print(x + y + z)

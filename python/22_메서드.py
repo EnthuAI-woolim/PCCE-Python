@@ -1,4 +1,13 @@
 # 자주 사용하는 메서드
+# .sort()
+# cf) .reverse()
+# .count()
+# .index()
+# .extend()
+# .split()
+# .find()
+# .replace()
+# .join()
 
 # 1. 리스트 메서드
 # 1-1. sort

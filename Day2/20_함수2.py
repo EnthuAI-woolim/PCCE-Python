@@ -95,4 +95,5 @@ def add(x, y):
 def get_add_func():
     return add
 
-print(get_add_func()(5, 6))  # 11
+result = get_add_func()(5, 6)
+print(result)  # 11
